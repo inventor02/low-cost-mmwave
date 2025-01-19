@@ -1,0 +1,10 @@
+[connection]
+id=usb0
+uuid=870acbb1-2512-493a-bc9d-0f6db7e6073e
+type=ethernet
+interface-name=usb0
+autoconnect=yes
+
+[ipv4]
+method=manual
+address1=172.16.0.100/24

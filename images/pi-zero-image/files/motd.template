@@ -1,0 +1,13 @@
+============================================================
+                UNIVERSITY OF SOUTHAMPTON
+                   GDP 53 LINUX IMAGES
+
+Image: PI ZERO 2 (WEB)
+Ver  : %COMMIT_HASH%
+Date : %BUILD_DATE%
+Build: by %BUILD_USER% on %BUILD_DEVICE%
+
+/!\ Please ensure any changes you would like to be persisted
+    in the future are added to the right place in the Packer
+    build, otherwise they will be overwritten!
+============================================================

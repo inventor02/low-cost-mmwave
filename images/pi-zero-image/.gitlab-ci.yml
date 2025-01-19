@@ -1,0 +1,11 @@
+stages:
+  - build
+
+build-image:
+  cache: []
+  stage: build
+  script:
+    - bash build.sh
+    - find /srv/pi-zero-builds -mmin +15 -type f -exec rm -fv {} \;
+    - cp corora-pi-zero2.img /srv/pi-zero-builds/corora-pi-zero2-${CI_COMMIT_SHORT_SHA}.img
+    - ln -fs /srv/pi-zero-builds/corora-pi-zero2-${CI_COMMIT_SHORT_SHA}.img /srv/pi-zero-builds/corora-pi-zero2-latest.img

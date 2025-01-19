@@ -1,0 +1,11 @@
+[Unit]
+Description=Tell radarman to shutdown
+DefaultDependencies=no
+Before=halt.target shutdown.target reboot.target
+
+[Service]
+ExecStart=/usr/local/bin/radarman-shutdown
+Restart=never
+
+[Install]
+WantedBy=halt.target shutdown.target reboot.target

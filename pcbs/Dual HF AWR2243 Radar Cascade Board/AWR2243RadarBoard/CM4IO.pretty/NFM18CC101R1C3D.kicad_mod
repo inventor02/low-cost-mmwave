@@ -1,0 +1,236 @@
+(footprint "NFM18CC101R1C3D"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "L=1.6mm W=0.8mm T=0.6mm")
+	(tags "Capacitor")
+	(property "Reference" "C**"
+		(at 0 -1.725 0)
+		(layer "F.SilkS")
+		(uuid "6a2b2625-355d-42be-bec7-fb8ebeb02a32")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "NFM18CC101R1C3D"
+		(at -0.17 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a02e539b-6a66-42da-8f5f-d789eb6350f0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "297f6d1e-1483-45ef-9a39-269087e66385")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6237c7fc-cb40-4ee0-abb8-148b8a2914a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "de006cff-1b91-4f2f-907f-976d403cb86a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.44 -0.08)
+		(end -1.44 -0.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "247366bb-b637-4a4f-b73c-380d834f5373")
+	)
+	(fp_line
+		(start -1.34 -0.08)
+		(end -1.34 -0.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12463d39-1b5b-4dff-aec0-5395c191aa87")
+	)
+	(fp_arc
+		(start -1.44 -0.08)
+		(mid -1.39 -0.13)
+		(end -1.34 -0.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "15e4810b-a568-4b0f-9425-fdd216fdd5d3")
+	)
+	(fp_arc
+		(start -1.34 -0.08)
+		(mid -1.39 -0.03)
+		(end -1.44 -0.08)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "814868b3-3109-435a-b899-d0ca22d8e490")
+	)
+	(fp_line
+		(start -1.35 -0.8)
+		(end 1.35 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cc690d46-e908-49a2-b627-2b195146fd00")
+	)
+	(fp_line
+		(start -1.35 0.825)
+		(end -1.35 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "37c5d039-1031-419d-b1b6-7c9950adf311")
+	)
+	(fp_line
+		(start 1.35 -0.8)
+		(end 1.35 0.825)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a532cff3-4f79-42f5-bb84-26abb03c7e9a")
+	)
+	(fp_line
+		(start 1.35 0.825)
+		(end -1.35 0.825)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "353d7bc8-f805-4eb0-83fa-04f79f7a5293")
+	)
+	(fp_line
+		(start -0.8 -0.4)
+		(end 0.8 -0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "da24d131-4679-4284-99db-1b07be165a16")
+	)
+	(fp_line
+		(start -0.8 0.4)
+		(end -0.8 -0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c4bf836a-113f-4fd1-bd87-e596c0a4e33d")
+	)
+	(fp_line
+		(start 0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "99c4fc93-ad52-4a8b-bd06-b5e771e468d9")
+	)
+	(fp_line
+		(start 0.8 0.4)
+		(end -0.8 0.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6ccaabde-ae70-4283-87d1-89c16f43d7e4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.17 0 0)
+		(layer "F.Fab")
+		(uuid "78726756-962e-4ab9-a73a-c004d14ed24d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.8 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5d84e197-5e3c-44d1-8172-558d8dcf1f48")
+	)
+	(pad "2" smd rect
+		(at 0 -0.4)
+		(size 0.4 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dca900e3-56d5-4f6f-8358-38596fdf2f10")
+	)
+	(pad "2" smd rect
+		(at 0 0.4)
+		(size 0.4 0.4)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "33671ac6-3591-4178-a6ef-d38f5f96fc4b")
+	)
+	(pad "3" smd rect
+		(at 0.8 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c02ce021-6df3-4038-9f4d-39e3ad537c6e")
+	)
+	(model "${KIPRJMOD}/CM4IO.3dshapes/NFM18HC105C1C3D.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

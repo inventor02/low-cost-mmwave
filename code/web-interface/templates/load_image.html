@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Load Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="{{ url_for('take_photo') }}">Take Photo</a></li>
+                <li><a href="{{ url_for('toggle_mode') }}">Toggle Mode</a></li>
+                <li><a href="{{ url_for('load_image') }}">Load Image</a></li>
+                <li><a href="{{ url_for('save_image') }}">Save Image</a></li>
+                <li><a href="{{ url_for('advanced_settings') }}">Advanced Settings</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <form method="post" enctype="multipart/form-data">
+                <p>
+                    <input type="file" name="image_file">
+                </p>
+                <p>
+                    <input type="submit" value="Upload">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "2024-11-07_11-51-24")(type "KiCad")(uri "${KIPRJMOD}/2024-11-07_11-51-24.kicad_sym")(options "")(descr ""))
+  (lib (name "AWR2243")(type "KiCad")(uri "${KIPRJMOD}/AWR2243.kicad_sym")(options "")(descr ""))
+  (lib (name "AWR2243ABGABLQ1")(type "KiCad")(uri "${KIPRJMOD}/AWR2243ABGABLQ1.kicad_sym")(options "")(descr ""))
+  (lib (name "LP876242-Q1")(type "KiCad")(uri "${KIPRJMOD}/LP876242-Q1.kicad_sym")(options "")(descr ""))
+  (lib (name "LMK1C1102PWR")(type "KiCad")(uri "${KIPRJMOD}/LMK1C1102PWR.kicad_sym")(options "")(descr ""))
+)

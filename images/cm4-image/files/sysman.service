@@ -1,0 +1,10 @@
+[Unit]
+Description=WSGI (Gunicorn) sysman
+After=network.target
+
+[Service]
+ExecStart=gunicorn --bind=0.0.0.0:8010 app:app
+WorkingDirectory=/sysman
+
+[Install]
+WantedBy=default.target

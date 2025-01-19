@@ -1,0 +1,10 @@
+[Unit]
+Description=WSGI (Gunicorn) GDP53 web interface server
+After=network.target
+
+[Service]
+ExecStart=gunicorn app:app
+WorkingDirectory=/web
+
+[Install]
+WantedBy=default.target

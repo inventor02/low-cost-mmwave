@@ -1,0 +1,21 @@
+Add in an script to run the following:
+----
+DCA1000EVM Control fpga overwatch.json
+DCA1000EVM Control record overwatch.json
+DCA1000EVM Control start_record overwatch.json
+
+mmwaveexample.exe
+
+--OR--
+
+DCA1000EVM Control fpga imaging.json
+DCA1000EVM Control record imaging.json
+DCA1000EVM Control start_record imaging.json
+
+mmwaveexample.exe
+----
+Required Files:
+
+mmwaveconfig.txt (one for each, need to be in seperate folders)
+
+See DCA1000EVM files from user guide, will need to be altered for group designed board.

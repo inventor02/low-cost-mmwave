@@ -1,0 +1,9 @@
+[Unit]
+Description=Bring up the USB network interface
+
+[Service]
+ExecStart=/usr/local/sbin/usbethernet
+Restart=never
+
+[Install]
+WantedBy=default.target

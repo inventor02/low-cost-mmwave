@@ -1,0 +1,14 @@
+[connection]
+id=hotspot
+uuid=1c1b8a5e-906c-488f-bfbf-b313611a0ba5
+type=wifi
+
+[wifi]
+mode=ap
+ssid=gdp53-hotspot
+
+[ipv4]
+method=shared
+
+[ipv6]
+method=shared

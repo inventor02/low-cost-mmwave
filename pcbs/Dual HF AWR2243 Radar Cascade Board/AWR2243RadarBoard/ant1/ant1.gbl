@@ -1,0 +1,21 @@
+G04 Filename: ant1.gbl*
+G04 FileFunction: Copper,L2,Bot,Signal*
+G04 Part: Single*
+G04 ProjectId: ant1,DF8E9236BDC58112A73720D8EB9DEF0D,1*
+G04 GenerationSoftware: MathWorks,MATLAB,23.2.0.2485118 (R2023b) Update 6*
+G04 CreationDate: 2024-12-05T00:59:75+0000*
+G04 FilePolarity: Positive*
+%FSLAX16Y16*%
+%MOIN*%
+G04 Antenna metal layer 2*
+%LPD*%
+G01*
+G36*
+X-0110236Y-0167323D02*
+X0110236D01*
+Y0127953D01*
+X-0110236D01*
+Y-0167323D01*
+G37*
+G04 MD5: eab5401929f3661be5e867262656fb7466a58c29665586e5569db74dacda58ec091f4faf93421d5e8c61d20956afce0ffbac3e2d3785d55bda31fda8bec61*
+M02*

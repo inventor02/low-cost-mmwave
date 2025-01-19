@@ -1,0 +1,123 @@
+(footprint "mmWaveRadarTXAntenna"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 1.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fb0dd6ef-34d1-4d3a-92e7-16bbcbb9133a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "mmWaveRadarTXAntenna"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e0a35bd3-183c-48a5-b5ce-06a65a5f740f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "50cbf4cf-4ea6-4ee3-8a51-b4e9ec987913")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b69f2b4-9d6f-467e-81a4-7a2541311e1f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "09d52694-0cff-469f-83f6-7d0594f0f2c8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd allow_soldermask_bridges)
+	(net_tie_pad_groups "1")
+	(fp_poly
+		(pts
+			(xy -1.4528 -1.22627) (xy -1.4528 -1.96) (xy -1.58163 -1.96) (xy -1.58163 -1.76) (xy -2.04 -1.76)
+			(xy -2.04 -2.74252) (xy -0.76558 -2.74252) (xy -0.76558 -1.76) (xy -1.22395 -1.76) (xy -1.22395 -1.96)
+			(xy -1.3528 -1.96) (xy -1.3528 -1.27626) (xy -0.10279 -1.27626) (xy -0.10279 -4.22627) (xy -1.4528 -4.22627)
+			(xy -1.4528 -4.96) (xy -1.58163 -4.96) (xy -1.58163 -4.76) (xy -2.04 -4.76) (xy -2.04 -5.74252) (xy -0.76558 -5.74252)
+			(xy -0.76558 -4.76) (xy -1.22395 -4.76) (xy -1.22395 -4.96) (xy -1.3528 -4.96) (xy -1.3528 -4.27625)
+			(xy 1.34722 -4.27625) (xy 1.34722 -4.96) (xy 1.21837 -4.96) (xy 1.21837 -4.76) (xy 0.76 -4.76) (xy 0.76 -5.74252)
+			(xy 2.03442 -5.74252) (xy 2.03442 -4.76) (xy 1.57605 -4.76) (xy 1.57605 -4.96) (xy 1.44722 -4.96)
+			(xy 1.44722 -4.22627) (xy 0.09721 -4.22627) (xy 0.09721 -1.27626) (xy 1.34722 -1.27626) (xy 1.34722 -1.96)
+			(xy 1.21837 -1.96) (xy 1.21837 -1.76) (xy 0.76 -1.76) (xy 0.76 -2.74252) (xy 2.03442 -2.74252) (xy 2.03442 -1.76)
+			(xy 1.57605 -1.76) (xy 1.57605 -1.96) (xy 1.44722 -1.96) (xy 1.44722 -1.22627) (xy 0.09721 -1.22627)
+			(xy 0.09721 -0.00125) (xy -0.10279 -0.00125) (xy -0.10279 -1.22627)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Cu")
+		(uuid "377bab3e-5f4a-4f02-bb78-6f97d917ac24")
+	)
+	(fp_rect
+		(start -2.18779 -5.94625)
+		(end 2.18721 -0.00125)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "50131cb3-6c1a-4201-a18d-cebef4bb12da")
+	)
+	(fp_rect
+		(start -2.18779 -5.94625)
+		(end 2.17721 -0.00125)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "4dc6d2fe-1c7f-4a40-8abf-4c1f31925b67")
+	)
+	(pad "1" connect rect
+		(at -0.00279 -0.20125)
+		(size 0.2 0.4)
+		(layers "F.Cu" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "86a9e8c5-dcde-436e-9164-b3702cfee471")
+	)
+)

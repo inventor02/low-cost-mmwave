@@ -1,0 +1,71 @@
+﻿Component,Reference,Qty,Supplier,Supplier Stock No,Description,Unit Price,Total Price
+Adapter Board,"PCB C4, C5",2,ONECALL,4539075,"CL21A106KOQNNNG SMD Multilayer Ceramic Capacitor, 10 µF, 16 V, 0805 [2012 Metric], ± 10%, X5R",0.022,0.044
+Adapter Board,"PCB C1, C2, C3",3,ONECALL,3013519,CL31A476MQHNNNE,0.1584,0.4752
+Adapter Board,PCB J1,1,MOUSER,200-QTH03001LDA,QTH-030-01-L-D-A,3.95,3.95
+Adapter Board,PCB J2,1,MOUSER,571-1-84953-5,FFC & FPC Connectors 15P 1.MM FPC Horz Top Cont. Assy,0.448,0.448
+Adapter Board,PCB J3,1,MOUSER,798-FH12-22S-0.5SH55,FFC & FPC Connectors 0.5MM 22 POS R/A BTTM SMT GLD,1.25,1.25
+Adapter Board,Printed Circuit Board,1,JLCPCB,N/A,Two Layer Printed Circuit Boards,0.33,0.33
+Radar Compute Module,PCB L1,1,MOUSER,994-XEL4030-332MEC,XEL4030-332MEC Power Inductor (SMD),2.13,2.13
+Radar Compute Module,"PCB D12,D9,D6",3,ONECALL,SC17497,"MBRA340T3G Schottky Rectifier, 40 V, 3 A, Single, DO-214AC (SMA), 2 Pins, 450 mV",0.12,0.36
+Radar Compute Module,"PCB R12,R5,R57,R1,R6,R55,R4,R9,R7,R61,R10,R8,R58,R13,R59,R53,R54,R60,R2,R11,R56,R49,R45,R27,R47,R14,R38,R25,R22,R50,R48,R31,R24,R34,R19,R33,R37,R23,R36,R46,R52,R17,R44,R51,R15,R30,R26,R21,R20,R18,R35",51,ONECALL,9232516,"RC0402JR-070RL Zero Ohm Resistor, Jumper, 0402 [1005 Metric], Thick Film, 62.5 mW, 1 A, Surface Mount Device",0.002,0.102
+Radar Compute Module,"PCB C21,C8,C33,C28,C7,C29,C19,C26,C27,C32,C61,C3,C18,C62,C51,C4,C20,C49",18,ONECALL,4539075,"CL21A106KOQNNNG SMD Multilayer Ceramic Capacitor, 10 µF, 16 V, 0805 [2012 Metric], ± 10%, X5R",0.022,0.396
+Radar Compute Module,"PCB J13,J12",2,DIGIKEY,2073-USB4085-GF-ACT-ND,"USB4085-GF-A USB Connector, Charging Connector, USB Type C, USB 2.0, Receptacle, 16 Ways, Through Hole Mount",0.695,1.39
+Radar Compute Module,"PCB Q1,Q2",2,ONECALL,4387188,"Power MOSFET, N Channel, 60 V, 170 mA, 3.9 ohm, SOT-323, Surface Mount",0.0167,0.0334
+Radar Compute Module,PCB SW2,1,MOUSER,653-A6H-6102,"A6H-6102 DIP / SIP Switch, 6 Circuits, Slide, Surface Mount, SPST, 24 VDC, 25 mA",2.55,2.55
+Radar Compute Module,PCB L2,1,ONECALL,2901787,SRP4020FA-3R3M Power Inductors (SMD),0.911,0.911
+Radar Compute Module,"PCB C45,C46,C47,C42,C44,C43",6,ONECALL,4539048,"CL21A226KQCLRNC SMD Multilayer Ceramic Capacitor, 22 µF, 6.3 V, 0805 [2012 Metric], ± 10%, X5R",0.039,0.234
+Radar Compute Module,"PCB Q4,Q3",2,ONECALL,SC16827,"NTR4101PT1G Power MOSFET, P Channel, 20 V, 3.2 A, 0.07 ohm, SOT-23, Surface Mount",0.07,0.14
+Radar Compute Module,"PCB IC2,IC1",2,ONECALL,3518316,"AP64500SP-13 DC-DC Switching Synchronous Step-Down Regulator, Adj, 3.8V-40V in, 0.8V-40V out, 5A out, HSOIC-8",1.45,2.9
+Radar Compute Module,PCB R97,1,ONECALL,4559981,"AC0603FR-07115KL SMD Chip Resistor, 115 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.004,0.004
+Radar Compute Module,"PCB R74,R73,R75,R72,R79,R80,R114,R63,R78,R77,R76,R64,R68,R116,R62",15,ONECALL,2447743,"MCWR06X000 PTL Zero Ohm Resistor, Jumper, 0603 [1608 Metric], Thick Film, 100 mW, 1 A, Surface Mount Device",0.0037,0.0555
+Radar Compute Module,"PCB R66,R65,R67,R71",4,ONECALL,2502439,"WR06X2701FTL SMD Chip Resistor, 2.7 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.024
+Radar Compute Module,"PCB C39,C38",2,ONECALL,1759028,"MC0603B273K250CT SMD Multilayer Ceramic Capacitor, 0.027 µF, 25 V, 0603 [1608 Metric], ± 10%, X7R",0.032,0.064
+Radar Compute Module,PCB Module1,2,ONECALL,2427679,"DF40C-100DS-0.4V(51) Mezzanine Connector, Receptacle, 0.4 mm, 2 Rows, 100 Contacts, Surface Mount, Phosphor Bronze",1.08,2.16
+Radar Compute Module,PCB R112,1,ONECALL,3225401,"JR2512X100E Zero Ohm Resistor, Jumper, 2512 [6432 Metric], Metal Plate, 2 W, 100 A, Surface Mount Device",0.297,0.297
+Radar Compute Module,"PCB R41,R42",2,ONECALL,2668270,"WR06X3001FTL SMD Chip Resistor, 3 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.012
+Radar Compute Module,PCB J6,1,ONECALL,2751447,"15-91-2100 Pin Header, Board-to-Board, 2.54 mm, 2 Rows, 10 Contacts, Surface Mount Straight, C-Grid 71308",0.559,0.559
+Radar Compute Module,PCB R96,1,ONECALL,3539638,"RK73H1JTTD1052F SMD Chip Resistor, 10.5 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, Precision",0.007,0.007
+Radar Compute Module,"PCB C37,C36",2,ONECALL,2496907,"0603N560J500CT SMD Multilayer Ceramic Capacitor, 56 pF, 50 V, 0603 [1608 Metric], ± 5%, C0G / NP0",0.0129,0.0258
+Radar Compute Module,PCB R43,1,ONECALL,2447319,"MCWR06X2001FTL SMD Chip Resistor, 2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.005,0.005
+Radar Compute Module,"PCB R86,R84,R83,R85",4,ONECALL,2502397,"WR06X1002FTL SMD Chip Resistor, 10 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.024
+Radar Compute Module,"PCB C1,C25,C11,C10,C35,C34,C23,C9,C66,C63,C60,C59,C2,C6,C65,C24,C5,C64,C54,C50,C22",21,ONECALL,4539099,"CL10B103KB8NNND SMD Multilayer Ceramic Capacitor, 0.01 µF, 50 V, 0603 [1608 Metric], ± 10%, X7R",0.007,0.147
+Radar Compute Module,"PCB R81,R82",2,ONECALL,2502396,"WR06X1001FTL SMD Chip Resistor, 1 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.012
+Radar Compute Module,"PCB C16,C14,C17,C13,C15,C12",6,ONECALL,3369245,"CC0603KRX7R8BB473 SMD Multilayer Ceramic Capacitor, 0.047 µF, 25 V, 0603 [1608 Metric], ± 10%, X7R",0.01,0.06
+Radar Compute Module,"PCB R117,R111",2,ONECALL,2908473,"CR2512-J/-000ELF Zero Ohm Resistor, Jumper, 2512 [6432 Metric], Thick Film, 1 W, 2 A, Surface Mount Device",0.0302,0.0604
+Radar Compute Module,"PCB J9,J8,J7",3,DIGIKEY,732-9774015360RTR-ND,"9774015360R Standoff, SMT, Non Stop, Steel, Round Female, M3, 6 mm x 1.5 mm, 2.9 mm Overall, WA-SMSI Series",1.33,3.99
+Radar Compute Module,PCB R99,1,ONECALL,2670883,"WR06X6982FTL SMD Chip Resistor, 69.8 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.006
+Radar Compute Module,PCB D4,1,ONECALL,3945798,"SMAJ14A-13-F TVS Diode, SMAJ Series, Unidirectional, 14 V, 23.2 V, DO-214AC (SMA), 2 Pins",0.176,0.176
+Radar Compute Module,"PCB FB2,FB3,FB1",3,ONECALL,4015951,"MH4516-600Y Ferrite Bead, 1806 [4516 Metric], 60 ohm, 6 A, MH Series, 0.01 ohm, ± 25%",0.0913,0.2739
+Radar Compute Module,PCB F1,1,ONECALL,2834843,"0685F5000-01 Fuse, Surface Mount, 5 A, Fast Acting, 125 VAC, 63 VDC, 1206 [3216 Metric], C1F",0.205,0.205
+Radar Compute Module,"PCB D2,D3,D1",3,ONECALL,SC20916,"MP008285 LED, Red, SMD, 0603 [1608 Metric], 20 mA, 2.4 V, 638 nm",0.06,0.18
+Radar Compute Module,"PCB R93,R94",2,ONECALL,3548659,"RK73H1JTTD2003F SMD Chip Resistor, 200 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, Precision",0.007,0.014
+Radar Compute Module,PCB R95,1,ONECALL,2670649,"WR06X1582FTL SMD Chip Resistor, 15.8 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.006
+Radar Compute Module,PCB SW1,1,ONECALL,2079555,"EVQP2F02K Tactile Switch, SPST-NO, EVQP2 Series, Top Actuated, Surface Mount, Round Button, 5 N",0.407,0.407
+Radar Compute Module,"PCB R100,R98",2,ONECALL,2073433,"MCMR06X2212FTL SMD Chip Resistor, Ceramic, 22.1 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film",0.008,0.016
+Radar Compute Module,"PCB J1,J2",2,MOUSER,798-FH12-22S-0.5SH55,FFC & FPC Connectors 0.5MM 22 POS R/A BTTM SMT GLD,1.25,2.5
+Radar Compute Module,"PCB J5,J4",2,MOUSER,571-1-84953-5,FFC & FPC Connectors 15P 1.MM FPC Horz Top Cont. Assy,0.448,0.896
+Radar Compute Module,"PCB D11,D14,D7,D10,D8,D13",6,ONECALL,SC19258,"ESD5Z3.3T1G TVS Diode, ESD Protection, Unidirectional, 3.3V, 14.1V, SOD-523, 2 Pins",0.1,0.6
+Radar Compute Module,"PCB C55,C53,C52,C56",4,ONECALL,1759059,"MC0603N330J500CT SMD Multilayer Ceramic Capacitor, 33 pF, 50 V, 0603 [1608 Metric], ± 5%, C0G / NP0",0.007,0.028
+Radar Compute Module,"PCB R120,R119,R118,R121",4,ONECALL,2668274,"WR06X3602FTL SMD Chip Resistor, 36 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.006,0.024
+Radar Compute Module,"PCB FL4,FL3,FL1,FL2",4,ONECALL,2458104,"0805USB-372MLB Choke, Common Mode, 189 nH, 0805USB Series, 370 ohm, 500 mA, 2.03mm x 1.27mm x 1.65mm",0.998,3.992
+Radar Compute Module,"PCB C57,C58",2,ONECALL,1759054,"MC0603N120J500CT SMD Multilayer Ceramic Capacitor, 12 pF, 50 V, 0603 [1608 Metric], ± 5%, C0G / NP0",0.007,0.014
+Radar Compute Module,"PCB R102,R104,R103",3,ONECALL,2447596,"MCWR08X1004FTL SMD Chip Resistor, 1 Mohm, ± 1%, 125 mW, 0805 [2012 Metric], Thick Film, General Purpose",0.007,0.021
+Radar Compute Module,PCB U1,1,ONECALL,SC19266,"FSUSB42MUX Low Power, 2 Port, High Speed, USB 2.0 (480Mbps), UART Analogue Switch, DPDT, 4.5 Ohm, 2.2V to 4.4V, MSOP, 10 Pins",0.59,0.59
+Radar Compute Module,PCB R101,1,ONECALL,2008388,"CR0805-J/-000ELF Zero Ohm Resistor, Jumper, 0805 [2012 Metric], Thick Film, 125 mW, 2 A, Surface Mount Device",0.004,0.004
+Radar Compute Module,"PCB R107,R108,R109,R110",4,ONECALL,2447404,"MCWR06X5101FTL SMD Chip Resistor, 5.1 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.004,0.016
+Radar Compute Module,PCB J10,1,ONECALL,2779940,"503960-0695 Memory Card Connector, Micro SIM, Push-Push, 6 Contacts, Phosphor Bronze, Gold Plated Contacts",1.79,1.79
+Radar Compute Module,"PCB R106,R105",2,ONECALL,2447320,"MCWR06X2201FTL SMD Chip Resistor, 2.2 kohm, ± 1%, 100 mW, 0603 [1608 Metric], Thick Film, General Purpose",0.005,0.01
+Radar Compute Module,PCB J11,1,MOUSER,710-693072010801,"693072010801 Memory Card Connector, MicroSD, Hinged, 8 Contacts, Copper, Gold Plated Contacts, WR-CRD",2.75,2.75
+Radar Compute Module,PCB J3,1,ONECALL,2377471,"2199119-3 Card Edge Connector, Dual Side, 67 Contacts, Surface Mount, Right Angle, Solder",1.12,1.12
+Radar Compute Module,PCB R122,1,ONECALL,4079342,"RP0603BRE0712KL SMD Chip Resistor, 12 kohm, ± 0.1%, 100 mW, 0603 [1608 Metric], Thin Film",0.053,0.053
+Radar Compute Module,PCB U2,1,ONECALL,2775060,"USB2514B/M2 USB Interface, USB Hub Controller, USB 2.0, 3 V, 3.6 V, SQFN, 36 Pins",2.2,2.2
+Radar Compute Module,PCB D5,1,ONECALL,4386878,"CUS357,H3F(T Small Signal Schottky Diode, Single, 45 V, 100 mA, 600 mV, 1 A, 125 °C",0.0206,0.0206
+Radar Compute Module,PCB Y1,1,ONECALL,2723240,"X1E0000210048 Crystal, 24 MHz, SMD, 3.2mm x 2.5mm, 10 ppm, 9 pF, 10 ppm, TSX-3225",0.799,0.799
+Radar Compute Module,Compute Module 4,1,ONECALL,3678902,System-On-Modules - SOM CM4004008 - Compute Module 4 Rev5 4GB 8GB Flash,42.31,42.31
+Radar Compute Module,FFC,1,DIGIKEY,2073-05-22-D-0076-A-4-06-4-T-ND,"05-22-D-0076-A-4-06-4-T CABLE FFC/FPC 22POS 0.5MM 2.99""",1.22,1.22
+Radar Compute Module,FFC,1,MOUSER,640-1015D0076C4084T,"FFC / FPC Jumper Cables 1mm Pitch FlatFlexCable, 15Contact, Conductor OppSide, Len76mm/3in, Tin Plt",0.695,0.695
+Radar Compute Module,Printed Circuit Board,1,JLCPCB,N/A,Four Layer Printed Circuit Boards,5.71,5.71
+WiFi Interface Board,Pi Zero,1,ONECALL,SC19061,RPI ZERO_W_V2 Raspberry Pi Zero 2 W (No Headers),12.4,12.4
+WiFi Interface Board,XT60 Battery Connectors,1,MOUSER,426-FIT0587,DFRobot Accessories High Quality Gold Plated XT60 Male & Female Bullet Connector,1.19,1.19
+WiFi Interface Board,Pi Zero SD Card,1,ONECALL,MD01476,"SDCS2/64GB 64GB Canvas Select Plus MicroSDXC Memory Card, Class 10 A1 UHS-I U1 100MB/s Read",4.78,4.78
+WiFi Interface Board,Power Splitter Module,1,DIGIKEY,1778-8086-013-ND,USB-C POWER SPLITTER FOR RPI4,2.71,2.71

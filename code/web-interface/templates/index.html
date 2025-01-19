@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radar Data Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <!-- Link to the CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Bokeh JS -->
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-3.6.2.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Will be altered for data upload as opposed to image when final data configs are decided upon. -->
+    <form id="uploadForm" method="post" enctype="multipart/form-data" action="{{ url_for('load_image') }}">
+        <input type="file" id="fileInput" name="image_file" style="display:none;" onchange="document.getElementById('uploadForm').submit();">
+    </form>
+
+    <div class="container">
+        <div class="header">
+            <h1>Radar Data Display</h1>
+        </div>
+        <div class="interaction">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="{{ url_for('take_photo') }}">Take Photo</a></li>
+                    <li><a href="{{ url_for('toggle_mode') }}">Mode: {{ mode }}</a></li>
+                    <li><a href="#" id="loadImageButton">Load Image</a></li>
+                    <li><a href="{{ url_for('save_image') }}">Save Image</a></li>
+                </ul>
+                <div class="advanced-settings">
+                    <a href="{{ url_for('advanced_settings') }}" id="advancedSettingsButton">Advanced Settings</a>
+
+                </div>
+
+            </div>
+            <div class="main-content">
+                {% if message %}
+                    <p class="message">{{ message }}</p>
+                {% endif %}
+                <div class="main-content">
+                    <div class="image-display" id="graph-container">
+                        <!-- Bokeh script and div for Range-Doppler Map -->
+                        {{ script | safe }}
+                        {{ div | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="image-buttons">
+                <button onclick="loadGraph('range_doppler')">Range-Doppler Map</button>
+                <button onclick="loadGraph('range_range')">Range-Angle Map</button>
+                <button onclick="loadGraph('dynamic_encoding')">Dynamic Encoding</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle Load Image and Advanced Settings buttons -->
+    <script>
+        function loadGraph(graphType) {
+            fetch(`/show_graph?type=${graphType}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    // Inject the returned HTML into the graph container
+                    document.getElementById('graph-container').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error loading graph:', error);
+                    alert('Failed to load the graph. Please try again.');
+                });
+        }
+    </script>
+</body>
+</html>

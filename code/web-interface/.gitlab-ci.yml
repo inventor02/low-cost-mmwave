@@ -1,0 +1,9 @@
+stages:
+  - upload
+
+upload-content:
+  cache: []
+  stage: upload
+  script:
+    - tar -czvf /srv/web-interface/web-interface-${CI_COMMIT_SHORT_SHA}.tar.gz *
+    - ln -fs /srv/web-interface/web-interface-${CI_COMMIT_SHORT_SHA}.tar.gz /srv/web-interface/web-interface-latest.tar.gz

@@ -1,0 +1,104 @@
+1	0x 1234 4321	8345 0016 0000 0000 0001 7CA3	41A0 0008	E268FFFF	2A59
+	0x 1234 4321	8345 0016 0000 0000 0001 7CA3	41A0 0008	E268FFFF	2A5900000000
+2	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+3	0x 1234 4321	8345 0016 1000 0000 0001 6CA3	41A0 0008	E214FFFF	3A6A
+4	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+5	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+6	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+7	0x 1234 4321	8005 0012 4000 0000 0001 3FE7	4000 0004	DEDA
+8	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+9	0x 5678 8765	FFFF FFFF FFFF FFFF FFFF FFFF
+	   SYNC			Opco leng flag remc nsbc chks	Sblk Sblk 	SBLKDATA
+					de   th   s    hunk      um		ID   LEN  
+					
+1	SYNC	0x12344321 	
+		Master to slave
+	
+	Opcode	0x8345	 
+		0101 Communication between Host to Master
+		00 COMMAND
+		0x20D RESERVED
+
+	Length	0x0016 10110
+		22 Bytes
+	
+	Flags 0000
+		00 New message
+		00 Acknowledgement is requested for the current message
+		00 CRC is appended to the message
+		00 16-bit CRC
+		0000 SEQNUM 0
+		
+	remchunks 0000
+	
+	nsbc 0001
+		1 Subblock
+		
+	Checksum 0x7CA3
+		0x8345
+	+	0x0016
+	+	0x0000
+	+	0x0000
+	+	0x0001
+	----------
+	=	0x835C	1000001101011100
+		0x7ca3	0111110010100011 1s Comp
+		
+	Sblk ID 0x41A0
+		????????????????????????????
+		
+	Sblk Length
+		
+	
+	
+9
+7 --------------------------------------------------------------------------------------------------------------------------
+
+7	0x 1234 4321	8005 0012 4000 0000 0001 3FE7	4000 0004	DEDA
+		SYNC		Opco leng flag remc nsbc chks	Sblk Sblk 	CRC
+					de   th   s    hunk      um		ID   LEN  
+
+	0x 1234 4321	8005 0012 4000 0000 0001 3FE7	4000 0004	DEDA
+	0x 1234 4321	8005 0012 4000 0000 0001 3FE7	4000 0004	DEDA
+
+7	SYNC 0x12344321
+		master to slave
+	
+	Opcode 0x8005 1000000000 00 0101
+		0101 Communication between Host to Master
+		00 COMMAND
+		0x200 AWR_DEV_RFPOWERUP_MSG
+		
+	length 0x0012
+		18 Bytes
+	
+	Flags 0x4000 
+		00 New message
+		00 Acknowledgement is requested for the current message
+		00 CRC is appended to the message
+		00 16-bit CRC
+		0100 SEQNUM 4
+		
+	remchunks 0x0000
+	
+	nsbc 0x0001
+		1 Subblock
+		
+	CHecksum
+		0x8005
+	+	0x0012
+	+	0x4000
+	+ 	0x0000
+	+	0x0001
+	----------
+	=	0xC018  1100000000011000
+		0x3fe7	0011111111100111
+		
+	SublockID	0x4000
+		Sub block 0x4000 – AWR_DEV_RFPOWERUP_SB
+		 
+	Subblock length 0x0004
+		4 bytes?
+		
+	CRC 0xDEDA 1101111011011010
+		reversed 0101101101111011 5b7b

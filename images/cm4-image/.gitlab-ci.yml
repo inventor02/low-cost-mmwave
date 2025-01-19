@@ -1,0 +1,11 @@
+stages:
+  - build
+
+build-image:
+  cache: []
+  stage: build
+  script:
+    - bash build.sh
+    - find /srv/cm4-builds -mmin +15 -type f -exec rm -fv {} \;
+    - cp corora-cm4.img /srv/cm4-builds/corora-cm4-${CI_COMMIT_SHORT_SHA}.img
+    - ln -fs /srv/cm4-builds/corora-cm4-${CI_COMMIT_SHORT_SHA}.img /srv/cm4-builds/corora-cm4-latest.img

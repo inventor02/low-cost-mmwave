@@ -1,0 +1,9 @@
+[Unit]
+Description=Configure the USB Ethernet gadget through libcomposite
+
+[Service]
+ExecStart=/usr/local/sbin/usbethernet
+Restart=never
+
+[Install]
+WantedBy=default.target

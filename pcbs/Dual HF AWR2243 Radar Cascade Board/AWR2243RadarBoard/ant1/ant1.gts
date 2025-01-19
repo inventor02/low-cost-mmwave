@@ -1,0 +1,20 @@
+G04 Filename: ant1.gts*
+G04 FileFunction: Soldermask,Top*
+G04 Part: Single*
+G04 ProjectId: ant1,DF8E9236BDC58112A73720D8EB9DEF0D,1*
+G04 GenerationSoftware: MathWorks,MATLAB,23.2.0.2485118 (R2023b) Update 6*
+G04 CreationDate: 2024-12-05T00:59:78+0000*
+G04 FilePolarity: Positive*
+%FSLAX16Y16*%
+%MOIN*%
+G36*
+G01*
+X-0129921Y-0227165D02*
+X0129921D01*
+Y-0187008D01*
+X-0129921D01*
+Y-0227165D01*
+D02*
+G37*
+G04 MD5: a871894369bc4edf185fafdc44bbc4f06f27bbdb2ac01581acb7eb208739dd7ee1d3f392dc8a6b812f88fe33be7fd949d217aa2ca221b4ccf4690cecf9b2e67*
+M02*

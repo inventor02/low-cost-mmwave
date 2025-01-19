@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Advanced Settings</h1>
+        </div>
+        <div class="interaction">
+            <div class="sidebar">
+                <ul class="tab-nav">
+                    <li><a href="#" data-target="chirp-config" class="tab-link active">Chirp Configuration</a></li>
+                    <li><a href="#" data-target="graph-custom" class="tab-link">Graph Customisation</a></li>
+                    <li><a href="#" data-target="processing-selection" class="tab-link">Processing Selection</a></li>
+                </ul>
+                <div class="return-home">
+                    <a href="{{ url_for('index') }}">Return Home</a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="tab-content chirp-config active">
+                    <h2>Chirp Configuration</h2>
+                    <p>Will contain: Velocity and distance resolution as well as their maximums as inputs and the corresponding chirp configs required as an output.</p>
+                </div>
+                <div class="tab-content graph-custom">
+                    <h2>Graph Customization</h2>
+                    <p>Not sure exactly how this will be displayed, but some way of choosing what subset of the possible data properties will be displayed and what encoding shall be employed for each one.</p>
+                </div>
+                <div class="tab-content processing-selection">
+                    <h2>Processing Selection</h2>
+                    <form>
+                        <div class="processing-option">
+                            <input type="radio" id="no-processing" name="processing" value="no">
+                            <label for="no-processing">   Minimal Processing</label>
+                            <textarea id="no-processing-desc" placeholder="This option removes all the processing save for that necessary for the data to run: the cleaning and the fast Fourier transforms."></textarea>
+                        </div>
+                        <div class="processing-option">
+                            <input type="radio" id="simple-processing" name="processing" value="simple">
+                            <label for="simple-processing">   Simple Processing</label>
+                            <textarea id="simple-processing-desc" placeholder="Uses only the basic processing needed to render a comprehensible graph: thresholding, windowing, and normalisation."></textarea>
+                        </div>
+                        <div class="processing-option">
+                            <input type="radio" id="full-processing" name="processing" value="full">
+                            <label for="full-processing">   Full Processing</label>
+                            <textarea id="full-processing-desc" placeholder="Applies all the data processing that can be selected, enhances the presence of objects but may result in data loss."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const tabLinks = document.querySelectorAll('.tab-link');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                tabLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                const target = link.getAttribute('data-target');
+                document.querySelector('.tab-content.' + target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
