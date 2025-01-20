@@ -1,0 +1,51 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "29514084-7d6b-4b2d-ae64-fedb5ed9fbb4")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 109.22 39.37)
+		(size 39.37 104.14)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "796aabd0-f4e8-41d3-91c3-ffecc3e7199f")
+		(property "Sheetname" "Samtech QTH-030-01-L-D-A"
+			(at 109.22 38.6584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Samtech QTH-030-01-L-D-A.kicad_sch"
+			(at 109.22 144.0946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "CM4-AWRInterfaceBoard"
+				(path "/29514084-7d6b-4b2d-ae64-fedb5ed9fbb4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
