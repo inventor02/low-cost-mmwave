@@ -1,0 +1,12 @@
+Dres = 0.05
+Vres = 0.5
+Ares = 14.6862
+
+startFreqConst = 1435388859
+idleTimeConst = 1100
+adcStartTime = 399
+rampEndTime = 20480
+freqSlopeConst = 318
+digOutSampleRate = 5256
+loopCount = 5
+periodicity = 779220

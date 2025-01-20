@@ -27,11 +27,92 @@
             <div class="main-content">
                 <div class="tab-content chirp-config active">
                     <h2>Chirp Configuration</h2>
-                    <p>Will contain: Velocity and distance resolution as well as their maximums as inputs and the corresponding chirp configs required as an output.</p>
+                    <!-- Automatic Chirp Calculation -->
+                <div class="chirp-auto">
+                    <h3>Automatic Chirp Calculation</h3>
+                    <form id="chirp-auto-form">
+                        <label for="velocity-resolution">Velocity Resolution (m/s):</label>
+                        <input type="number" id="velocity-resolution" name="velocity-resolution" required>
+
+                        <label for="distance-resolution">Distance Resolution (m):</label>
+                        <input type="number" id="distance-resolution" name="distance-resolution" required>
+
+                        <button type="button" onclick="generateChirpConfig()">Generate Chirp Parameters</button>
+                    </form>
+                    <pre id="chirp-auto-output"></pre>
                 </div>
-                <div class="tab-content graph-custom">
+
+                <!-- Manual Chirp Configuration -->
+                <div class="chirp-manual">
+                    <h3>Manual Chirp Configuration</h3>
+                    <form id="chirp-manual-form">
+                        <label for="distance-resolution">Distance Resolution:</label>
+                        <input type="number" id="distance-resolution" name="distance-resolution" required>
+
+                        <label for="velocity-resolution">Velocity Resolution:</label>
+                        <input type="number" id="elocity-resolution" name="elocity-resolution" required>
+
+                        <label for="angle-resolution">Angle Resolution:</label>
+                        <input type="number" id="angle-resolution" name="angle-resolution" required>
+
+                        <label for="start-freq-const">Start Frequency:</label>
+                        <input type="number" id="start-freq-const" name="start-freq-const" required>
+
+                        <label for="idle-time-const">Idle Time:</label>
+                        <input type="number" id="idle-time-const" name="idle-time-const" required>
+
+                        <label for="adc-start-time">ADC Start Time:</label>
+                        <input type="number" id="adc-start-time" name="adc-start-time" required>
+
+                        <label for="ramp-end-time">Ramp End Time</label>
+                        <input type="number" id="ramp-end-time" name="ramp-end-time" required>
+
+                        <label for="freq-slope-const">Slope:</label>
+                        <input type="number" id="freq-slope-const" name="freq-slope-const" required>
+
+                        <label for="dig-out-sample-rate">Dig Out Sample Rate:</label>
+                        <input type="number" id="dig-out-sample-rate" name="dig-out-sample-rate" required>
+
+                        <label for="loop-count">Loop Count:</label>
+                        <input type="number" id="loop-count" name="loop-count" required>
+
+                        <label for="periodicity">Periodicity:</label>
+                        <input type="number" id="periodicity" name="periodicity" required>
+
+                        <button type="button" onclick="saveManualChirpConfig()">Save Chirp Parameters</button>
+                    </form>
+                </div>
+            </div>
+                <div class="tab-content graph-custom active">
                     <h2>Graph Customization</h2>
-                    <p>Not sure exactly how this will be displayed, but some way of choosing what subset of the possible data properties will be displayed and what encoding shall be employed for each one.</p>
+                    <form id="graph-custom-form">
+                        <!-- Transparency Option -->
+                        <div class="processing-option">
+                            <input type="checkbox" id="transparency" name="transparency" checked>
+                            <label for="transparency">Enable Transparency</label>
+                            <select id="transparency-options" name="transparency-options">
+                                <option value="low">Magnitude</option>
+                                <option value="medium">Velocity</option>
+                                <option value="high">Fan Presence</option>
+                            </select>
+                        </div>
+                        <!-- Color Option -->
+                        <div class="processing-option">
+                            <input type="checkbox" id="color" name="color" checked>
+                            <label for="color">Enable Color</label>
+                            <select id="color-options" name="color-options">
+                                <option value="monochrome">Velocity</option>
+                                <option value="gradient">Magnitude</option>
+                                <option value="custom">Fan Presence</option>
+                            </select>
+                        </div>
+                        <!-- Shape Option -->
+                        <div class="processing-option">
+                            <input type="checkbox" id="shape" name="shape" checked>
+                            <label for="shape">Enable Shape</label>
+                            <textarea id="shape-input" placeholder="When selected objects with fans will be rendered as circles and non-fan objects as triangles."></textarea>
+                        </div>
+                    </form>
                 </div>
                 <div class="tab-content processing-selection">
                     <h2>Processing Selection</h2>
@@ -74,5 +155,50 @@
             });
         });
     </script>
+
+    <script>
+        function generateChirpConfig() {
+            const velocityResolution = document.getElementById('velocity-resolution').value;
+            const distanceResolution = document.getElementById('distance-resolution').value;
+        
+            fetch('/generate-chirp', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ velocity_resolution: velocityResolution, distance_resolution: distanceResolution })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('chirp-auto-output').textContent = JSON.stringify(data, null, 4);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+        function saveManualChirpConfig() {
+            const chirpData = {
+                distanceResolution: document.getElementById('distance-resolution').value,
+                velocityResolution: document.getElementById('velocity-resolution').value,
+                angleResolution: document.getElementById('angle-resolution').value,
+                startFreqConst: document.getElementById('start-freq-const').value,
+                idleTimeConst: document.getElementById('idle-time-const').value,
+                adcStartTime: document.getElementById('adc-start-time').value,
+                rampEndTime: document.getElementById('ramp-end-time').value,
+                freqSlopeConst: document.getElementById('freq-slope-const').value,
+                digOutSampleRate: document.getElementById('dig-out-sample-rate').value,
+                loopCount: document.getElementById('loop-count').value,
+                periodicity: document.getElementById('periodicity').value
+            };
+        
+            fetch('/save-manual-chirp', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(chirpData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        </script>
 </body>
 </html>

@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="{{ url_for('take_photo') }}">Take Photo</a></li>
                     <li><a href="{{ url_for('toggle_mode') }}">Mode: {{ mode }}</a></li>
-                    <li><a href="#" id="loadImageButton">Load Image</a></li>
+                    <li><a href="{{ url_for('load_image') }}">Load Image</a></li>
                     <li><a href="{{ url_for('save_image') }}">Save Image</a></li>
                 </ul>
                 <div class="advanced-settings">
@@ -40,7 +40,7 @@
                     <p class="message">{{ message }}</p>
                 {% endif %}
                 <div class="main-content">
-                    <div class="image-display" id="graph-container">
+                    <div class="image-display" id="bokeh-plot">
                         <!-- Bokeh script and div for Range-Doppler Map -->
                         {{ script | safe }}
                         {{ div | safe }}
@@ -51,7 +51,7 @@
         <div class="bottom-bar">
             <div class="image-buttons">
                 <button onclick="loadGraph('range_doppler')">Range-Doppler Map</button>
-                <button onclick="loadGraph('range_range')">Range-Angle Map</button>
+                <button onclick="loadGraph('range_angle')">Range-Angle Map</button>
                 <button onclick="loadGraph('dynamic_encoding')">Dynamic Encoding</button>
             </div>
         </div>
@@ -60,6 +60,8 @@
     <!-- JavaScript to handle Load Image and Advanced Settings buttons -->
     <script>
         function loadGraph(graphType) {
+            const graphContainer = document.getElementById('bokeh-plot');
+
             fetch(`/show_graph?type=${graphType}`)
                 .then(response => {
                     if (!response.ok) {
@@ -69,7 +71,17 @@
                 })
                 .then(html => {
                     // Inject the returned HTML into the graph container
-                    document.getElementById('graph-container').innerHTML = html;
+                    graphContainer.innerHTML = html;
+
+                    // Reinitialize Bokeh components
+                    const scripts = graphContainer.querySelectorAll("script");
+                    scripts.forEach(script => {
+                        if (script.type === "text/javascript") {
+                            eval(script.innerHTML); // Execute the embedded Bokeh script
+                        }
+                    });
+
+                    console.log("Graph successfully rendered!");
                 })
                 .catch(error => {
                     console.error('Error loading graph:', error);

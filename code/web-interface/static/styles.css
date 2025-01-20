@@ -294,3 +294,10 @@ body {
 .processing-option textarea::placeholder {
     color: #000; /* Make placeholder text black */
 }
+
+.chirp-manuel-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

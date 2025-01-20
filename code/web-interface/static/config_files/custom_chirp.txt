@@ -1,0 +1,13 @@
+{
+    "distanceResolution": "",
+    "velocityResolution": "",
+    "angleResolution": "1",
+    "startFreqConst": "1",
+    "idleTimeConst": "1",
+    "adcStartTime": "1",
+    "rampEndTime": "1",
+    "freqSlopeConst": "1",
+    "digOutSampleRate": "1",
+    "loopCount": "1",
+    "periodicity": "1"
+}
